@@ -1,0 +1,122 @@
+.slider-container{
+    position: relative;
+    z-index: 0;
+    margin-top: -1rem;
+}
+.banner{
+    position: relative;
+}
+.banner-image{
+    transition: var(--transition);
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    z-index: -9;
+}
+.banner-back{
+    height: 90vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.526);
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.banner-image:hover::after{
+    background-color: blue;
+}
+.banner h1{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
+    color: white;
+    opacity: 1;
+    transition: var(--transition);
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+}
+.banner button{
+    padding:.6rem 1.7rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: var(--transition);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 48%;
+    z-index: 0;
+}
+.banner button:hover{
+    background-color: rgb(255, 162, 0);
+}
+.banner button:hover a{
+    transition: var(--transition);
+    color: white;
+}
+.slider-btn{
+    position: absolute;
+    top: 40%;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    opacity: 0;
+    transition: var(--transition);
+}
+.show-btn{
+    opacity: 1;
+}
+.btn-1{
+    cursor: pointer;
+    transition: var(--transition);
+}   
+.btn-2{
+    cursor: pointer;
+    transition: var(--transition);
+}  
+.btn-1:hover{
+    cursor: pointer;
+    scale: 1.1;
+}   
+.btn-2:hover{
+    cursor: pointer;
+    scale: 1.1;
+}  
+
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) { }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) { }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {
+    .banner h1{
+        font-size: 1.8rem;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  {
+    .banner h1{
+        font-size: 1.6rem;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  {
+    .banner h1{
+        font-size: 1.5rem;
+    }
+ }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

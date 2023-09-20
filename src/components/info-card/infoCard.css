@@ -1,0 +1,199 @@
+.info-container{
+    padding: 2rem 3rem;
+}
+/* info title design starts */
+.info-title{
+    display: flex;
+}
+.info-title .left{
+    flex-basis: 50%;
+    padding-right: 1rem;
+    padding-top: .4rem;
+}
+.info-link{
+    color: blue;
+    cursor: pointer;
+}
+.info-title .right{
+    flex-basis: 50%;
+}
+.card{
+    width: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: rgb(255, 179, 0);
+    border-radius: .5rem;
+    transition: var(--transition);
+}
+.card:hover{
+    opacity: .7;
+}
+.card p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.card-icon{
+    font-size: 1.6rem;
+}
+/* info title design ends */
+
+/* info card design starts */
+.info-cards{
+    display: flex;
+    padding-top: 1rem;
+    gap: 2rem;
+}
+.info-card-left{
+    flex-basis: 50%;
+}
+.left-card{
+    padding: 1rem;
+    box-shadow: .1px .1px 15px rgba(0, 0, 0, 0.699),
+    -.1px 0 0px black;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.left-card:hover{
+    box-shadow: .1px .1px 5px black,
+    -.1px 0 0px black;
+}
+.left-card h2{
+    font-weight: 600;
+}
+.left-card p{
+    margin-top: 2rem;
+    line-height: 1.5rem;
+    font-weight: normal;
+    text-align: justify;
+    font-size: .9rem;
+}
+.info-card-right{
+    flex-basis: 50%;
+}
+.right-card{
+    padding: 1rem;
+    box-shadow: .1px .1px 15px rgba(0, 0, 0, 0.668),
+    -.1px 0 0px black;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.right-card:hover{
+    box-shadow: .1px .1px 5px black,
+    -.1px 0 0px black;
+}
+.right-card h2{
+    font-weight: 600;
+}
+.right-card img{
+    width: 10rem;
+    display: inline-flex;
+}
+.right-card p{
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+.more-btn{
+    background-color: blue;
+    padding: .2rem 1rem;
+    border-radius: .1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.more-btn:hover{
+    color: var(--color-yellow);
+}
+/* info card design ends */
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) { }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) { }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {
+    .info-container{
+        padding: 1.5rem;
+    }
+    .card{
+        width: 17rem;
+    }
+    .info-cards{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        gap: 2rem;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  {
+    .info-container{
+        padding: 1.5rem;
+    }
+    /* info title design starts */
+    .info-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    .info-title .left{
+        flex-basis: 50%;
+        padding-right: 0rem;
+        padding-top: .5rem;
+        padding-bottom: .3rem;
+    }
+    .card{
+        width: 22rem;
+    }
+    .info-cards{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        gap: 2rem;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { 
+    .info-container{
+        padding: 1rem;
+    }
+    /* info title design starts */
+    .info-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+    .info-title .left{
+        flex-basis: 50%;
+        padding-right: 1rem;
+        padding-top: .5rem;
+        padding-bottom: .3rem;
+    }
+    .card{
+        width: 20rem;
+    }
+    .info-cards{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        gap: 1.2rem;
+    }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

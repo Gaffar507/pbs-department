@@ -1,0 +1,212 @@
+.research-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3rem 4rem;
+    gap: 3rem;
+}
+/* left research style starts */
+.left-research{
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+}
+.left-research h3{
+    border: 1px solid rgba(0, 0, 0, 0.198);
+    padding: 1rem;
+    width: 100%;
+    font-weight: bold;
+}
+.research-news{
+    background-color: rgb(255, 157, 0);
+    padding:.8rem 2rem;
+    border-radius: .2rem;
+    font-weight: bold;
+    font-size: .9rem;
+    word-spacing: .2rem;
+    width: 16rem;
+    text-align: center;
+}
+/* left research style ends */
+
+
+/* notice board style starts */
+.notice-board{
+    flex-basis: 35%;
+    border: 1px solid rgba(54, 54, 54, 0.274);
+    margin-top: 5rem;
+}
+.notice-board h3{
+    background-color: rgb(217, 213, 213);
+    text-align: center;
+    padding: .8rem;
+}
+.notice-title{
+    padding: 2rem;
+    font-size: .9rem;
+}
+.notice-title p{
+    padding-bottom:1.5rem;
+}
+.notice-title hr{
+    margin-top: 1.5rem;
+    border: 1px solid rgba(49, 49, 49, 0.227);
+}
+/* notice board style ends */
+
+.notice-btn{
+    border: 2px solid rgba(0, 0, 0, 0.164);
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    font-size: .9rem;
+    font-weight: bold;
+    transition: var(--transition);
+    cursor: pointer;
+    margin:1rem auto;
+}
+.notice-btn:hover{
+    color: rgb(255, 149, 0);
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) { }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) { }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  { 
+    .research-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:1rem;
+        gap: 1rem;
+        margin-top: 7rem;
+    }
+    /* left research style starts */
+    .left-research{
+        flex-basis: 100%;
+        row-gap: 3rem;
+    }
+    .left-research h3{
+        border: 1px solid rgba(0, 0, 0, 0.198);
+        padding: .8rem;
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .research-news{
+        background-color: rgb(255, 157, 0);
+        padding:.8rem 2rem;
+        border-radius: .2rem;
+        font-weight: bold;
+        font-size: .9rem;
+        word-spacing: .2rem;
+        width: 16rem;
+        text-align: center;
+    }
+    /* left research style ends */
+    .notice-board{
+        flex-basis: 100%;
+        border: 1px solid rgba(54, 54, 54, 0.274);
+        margin: 3rem 0;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+    .research-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:1rem;
+        gap: 1rem;
+        margin-top: 10rem;
+    }
+    /* left research style starts */
+    .left-research{
+        flex-basis: 100%;
+        row-gap: 2rem;
+    }
+    .left-research h3{
+        border: 1px solid rgba(0, 0, 0, 0.198);
+        padding: .8rem;
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    .research-news{
+        background-color: rgb(255, 157, 0);
+        padding:.8rem 2rem;
+        border-radius: .2rem;
+        font-weight: bold;
+        font-size: .9rem;
+        word-spacing: .2rem;
+        width: 16rem;
+        text-align: center;
+    }
+    /* left research style ends */
+    .notice-board{
+        flex-basis: 100%;
+        border: 1px solid rgba(54, 54, 54, 0.274);
+        margin-top: 3rem;
+    }
+}
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { 
+    .research-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:1rem;
+        gap: 1rem;
+        margin-top: 4rem;
+    }
+    /* left research style starts */
+    .left-research{
+        flex-basis: 100%;
+        row-gap: 2rem;
+    }
+    .left-research h3{
+        border: 1px solid rgba(0, 0, 0, 0.198);
+        padding: 1rem;
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+    }
+    .research-news{
+        background-color: rgb(255, 157, 0);
+        padding:.8rem 2rem;
+        border-radius: .2rem;
+        font-weight: bold;
+        font-size: .9rem;
+        word-spacing: .2rem;
+        width: 16rem;
+        text-align: center;
+    }
+    /* left research style ends */
+    .notice-board{
+        flex-basis: 100%;
+        border: 1px solid rgba(54, 54, 54, 0.274);
+        margin-top: 3rem;
+    }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

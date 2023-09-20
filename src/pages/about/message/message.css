@@ -1,0 +1,55 @@
+.message-main-container{
+    margin: 3rem;
+    padding: 2rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.246),
+    -1px 0 10px rgba(0, 0, 0, 0.224);
+    border-top:3px solid rgb(54, 0, 93) ;
+}
+.upper-section{
+    display: flex;
+    column-gap: 1.6rem;
+}
+.upper-section img{
+    width: 10rem;
+    height: 12rem;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    padding: .2rem;
+    border-radius: .2rem;
+}
+.bottom-section{
+    padding: 2rem 0;
+    text-align: justify;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) { }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) {
+    .message-main-container{
+        margin: 2rem;
+        padding: 1rem;
+    }
+ }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  { }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+    .message-main-container{
+        margin: 1rem;
+        padding: .5rem;
+    }
+}
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { 
+
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

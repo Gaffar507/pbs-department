@@ -1,0 +1,36 @@
+.float-container{
+    border: 1px solid rgba(0, 0, 0, 0.306);
+
+}
+.main-title{
+    background-color: rgb(54, 0, 93);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: .6rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.main-title:hover{
+    background-color: indigo;
+}
+.float-info{
+    padding: .5rem;
+    transition: var(--transition);
+}
+.hidden-info{
+    display: none;
+}
+.float-btn{
+    color: brown;
+    text-decoration: underline;
+    background-color: transparent;
+    cursor: pointer;
+    transition: var(--transition);
+    padding-left: .5rem;
+}
+.float-btn:hover{
+    color: coral;
+    scale: 1.1;
+}

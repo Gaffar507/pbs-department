@@ -1,0 +1,97 @@
+.news-slider-container{
+    display: flex;
+    padding: 3rem;
+}
+.left-news{
+    flex-basis: 70%;
+    padding: 2rem;
+}
+.right-news{
+    flex-basis: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.251);
+    margin: 2rem 0;
+}
+.right-news h3{
+    background-color: rgba(192, 192, 192, 0.424);
+    padding: .5rem 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.sliders{
+    padding: 2rem;
+}
+.slider{
+    padding: 1rem 0;
+}
+.slider p{
+    margin-top: .5rem;
+    font-size: .8rem;
+    opacity: .7;
+}
+.slider-link{
+    font-size: .8rem;
+    transition: var(--transition);
+}
+.slider-link:hover{
+    color: blue;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) { }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) { }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {
+    .news-slider-container{
+        display: flex;
+        padding: 1rem;
+    }
+    .left-news{
+        flex-basis: 100%;
+    }
+    .right-news{
+        flex-basis: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.251);
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+    .news-slider-container{
+        display: flex;
+        flex-direction: column;
+        padding: .8rem;
+    }
+    .left-news{
+        flex-basis: 100%;
+        padding: 2rem;
+    }
+    .right-news{
+        flex-basis: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.251);
+        margin: 2rem 0;
+    }
+    .right-news h3{
+        background-color: rgba(192, 192, 192, 0.424);
+        padding: .5rem 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    .sliders{
+        padding: 2rem;
+    }
+    .slider{
+        padding: 1rem 0;
+    }
+}
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

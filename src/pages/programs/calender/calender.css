@@ -1,0 +1,24 @@
+.calender-box{
+    margin: 4rem;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329),
+    -1px 0px 10px rgba(0, 0, 0, 0.349);
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {
+    .calender-box{
+        margin: 2rem;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+    .calender-box{
+        margin: 1rem;
+    }
+}
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

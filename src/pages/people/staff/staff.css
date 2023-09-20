@@ -1,0 +1,100 @@
+.staff-container{
+    height: 60vh;
+    padding: 4rem;
+}
+.staff{
+    padding: 2rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.382),
+    -1px 0 5px rgba(0, 0, 0, 0.463);
+    width: 35rem;
+    height: 15rem;
+    display: flex;
+}
+.staff-image{
+    flex-basis: 40%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding:0 1rem;
+}
+.staff-image:hover{
+    border: 2px solid rgba(0, 0, 0, 0.304);
+}
+.staff-img{
+    font-size: 10rem;
+}
+.staff-title{
+    padding:2rem 1rem;
+    flex-basis: 60%;
+    line-height: 1.7rem;
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  { 
+    .staff-container{
+        height: 50vh;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .staff{
+        padding: 1rem;
+        width: 25rem;
+        height: 12rem;
+        display: flex;
+    }
+    .staff-image{
+        flex-basis: 40%;
+        border: 2px solid rgba(0, 0, 0, 0);
+        padding:0;
+    }
+    .staff-image:hover{
+        border: 2px solid rgba(0, 0, 0, 0.304);
+    }
+    .staff-img{
+        font-size: 8rem;
+    }
+    .staff-title{
+        padding:1rem;
+        flex-basis: 60%;
+        line-height: 1.7rem;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  {
+    .staff-container{
+        height: 50vh;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .staff{
+        padding: .5rem;
+        width: 20rem;
+        height: 10rem;
+        display: flex;
+    }
+    .staff-image{
+        flex-basis: 40%;
+        border: 2px solid rgba(0, 0, 0, 0);
+        padding:0;
+    }
+    .staff-image:hover{
+        border: 2px solid rgba(0, 0, 0, 0.304);
+    }
+    .staff-img{
+        font-size: 5rem;
+    }
+    .staff-title{
+        padding:.5rem;
+        flex-basis: 60%;
+        line-height: 1.7rem;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

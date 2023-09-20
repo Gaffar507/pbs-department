@@ -1,0 +1,53 @@
+.programs{
+    height: auto;
+}
+.programs-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+    color: rgb(255, 174, 0);
+}
+.program-link{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+.program-icon{
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.187);
+    color: rgb(255, 170, 0);
+    font-size: 5rem;
+    background-color: cadetblue;
+    border-radius: 5rem;
+    transition: var(--transition);
+}
+.program-icon:hover{
+    scale: 1.05;
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  { 
+    .programs-list{
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  {
+    .programs-list{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

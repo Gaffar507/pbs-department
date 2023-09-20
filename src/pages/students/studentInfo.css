@@ -1,0 +1,44 @@
+.main-students-container{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.488),
+    -1px 0 5px rgba(0, 0, 0, 0.508);
+    margin: 4rem;
+    border-top: 3px solid rgb(21, 0, 115);
+    padding: 2rem;
+}
+.students-box{
+    background-color: rgb(193, 193, 193);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.students-box p{
+    padding-right:.4rem ;
+}
+.students-box h3{
+    color: rgb(255, 21, 0);
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  { 
+    .main-students-container{
+        margin: 1.5rem;
+        border-top: 3px solid rgb(21, 0, 115);
+        padding: 2rem;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  {
+    .main-students-container{
+        margin: 1rem;
+        border-top: 3px solid rgb(21, 0, 115);
+        padding: 1rem;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

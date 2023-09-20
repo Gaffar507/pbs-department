@@ -1,0 +1,14 @@
+export{ default as neru} from "../images/neru-mam.jpg";
+export{ default as belu} from "../images/belurani.jpg";
+export{ default as romana} from "../images/romana.jpg";
+export{ default as ratna} from "../images/ratna.jpg";
+export{ default as samima} from "../images/samima.jpg";
+export{ default as jchakma} from "../images/jchakma.jpg";
+export{ default as biman} from "../images/biman.jpg";
+export{ default as sumon} from "../images/sumon.jpg";
+export{ default as sukumal} from "../images/sukumal.jpg";
+export{ default as delip} from "../images/delip-sir.jpg";
+export{ default as santu} from "../images/santu.jpg";
+export{ default as rakib} from "../images/rakib.jpg";
+export{ default as tanmoy} from "../images/tanmoy.jpg";
+export{ default as kiron} from "../images/kiron.jpg";

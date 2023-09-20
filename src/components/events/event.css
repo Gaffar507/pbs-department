@@ -1,0 +1,187 @@
+.event-container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.news-title{
+    font-weight: bolder;
+    text-align: center;
+}
+.title-bar{
+    border: 1.4px solid rgb(255, 166, 0);
+    width: 3rem;
+    margin: 1rem auto;
+    border-radius: .3rem;
+}
+.event-card{
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233),
+    -1px 0 10px rgba(0, 0, 0, 0.294);
+    height: 20rem;
+    margin:3.5rem 5rem;
+    padding: 2rem;
+}
+/* left event design starts */
+.left-event{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+.event-title{
+    padding-right: 2rem;
+}
+.event-title h1{
+    font-size: 4rem;
+    color: rgb(255, 166, 0);
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.event-bar1{
+    border-left: 1px solid black;
+    height: 5.5rem;
+    margin-top: 1rem;
+    opacity: .6;
+}
+/* left event design ends */
+
+/* right event design starts */
+.right-event{
+    flex-basis: 50%;
+}
+.right-event h3{
+    font-weight: bolder;
+}
+.event-icons{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: rgb(255, 162, 0);
+}
+.event-bar2{
+    border-left: 1px solid black;
+    height: 1.2rem;
+    opacity: .6;
+}
+.right-event p{
+    opacity: .8;
+}
+.right-event button{
+    background-color: transparent;
+    margin-top: 2rem;
+}
+.event-btn{
+    cursor: pointer;
+    transition: var(--transition);
+    border: 2px solid #00009b;
+    padding: .3rem 1.9rem;
+    border-radius: 4rem;
+    font-size: .9rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus{
+    color: rgb(255, 162, 0);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.event-btn:hover{
+    background-color: indigo;
+    color: white;
+}
+/* right event design ends */
+
+.all-events{
+    background-color: rgb(255, 157, 0);
+    padding:.8rem 2rem;
+    border-radius: .4rem;
+    margin: auto;
+    font-weight: bold;
+    font-size: .9rem;
+    word-spacing: .2rem;
+    width: 13rem;
+    text-align: center;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) { }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) { 
+    .news-title h1{
+        font-weight: normal;
+        font-size: 2rem;
+    }
+    .event-card{
+        display: flex;
+        justify-content: center;
+        height: 34rem;
+        margin:2rem;
+        padding: 2rem;
+        row-gap: 2rem;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {
+    .news-title h1{
+        font-weight: normal;
+        font-size: 2rem;
+    }
+    .event-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 32rem;
+        margin:2rem;
+        padding: 1rem;
+        row-gap: 2rem;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+    .news-title h1{
+        font-weight: normal;
+        font-size: 1.8rem;
+    }
+    .event-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 32rem;
+        margin:2rem;
+        padding: 1rem;
+        row-gap: 2rem;
+    }
+}
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  {
+    .news-title h1{
+        font-weight: normal;
+        font-size: 1.7rem;
+    }
+    .event-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 32rem;
+        margin:.8rem;
+        padding: 1rem;
+        row-gap: 2rem;
+    }
+ }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

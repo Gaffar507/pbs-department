@@ -1,0 +1,211 @@
+.programs-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.programs-title{
+    font-weight: bolder;
+}
+.title-bar{
+    border: 1.4px solid rgb(255, 166, 0);
+    width: 3rem;
+    margin: 1rem auto;
+    border-radius: .3rem;
+}
+.programs-card{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+.program-card{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.365),
+    -1px 0 10px rgba(0, 0, 0, 0.404);
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+.program-card:hover{
+    scale: 1.02;
+}
+.program-card img{
+    width: 22rem;
+    object-fit: cover;
+    height: 15rem;
+}
+.program-card h3{
+    font-weight: bold;
+    padding: 1rem;
+}
+.program-card-bar{
+    border: 1px solid rgba(0, 0, 0, 0.122);
+    width: 18rem;
+}
+.program-btn{
+    margin: 2rem;
+    background-color: rgb(255, 170, 0);
+    padding:.5rem 1rem;
+    border-radius: .4rem;
+    width: 18rem;
+    height: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    font-size: .9rem;
+    font-weight: bold;
+    z-index: 0;
+}
+.program-btn::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .4s ease-in-out;
+    border-radius: .4rem;
+    z-index: -1;
+}
+.program-btn:hover::after{
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+.program-btn:hover{
+    color: white;
+    z-index: 1;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) {
+
+ }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) {
+    .programs-card{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-left: .8rem;
+    }
+    .program-card{
+        width: 19rem;
+    }
+    .program-card img{
+        width: 19rem;
+    }
+    .program-card-bar{
+        border: 1px solid rgba(0, 0, 0, 0.122);
+        width: 16rem;
+    }
+    .program-btn{
+        width: 15rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {
+    .programs-card{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-left: .8rem;
+    }
+    .program-card{
+        width: 19rem;
+    }
+    .program-card img{
+        width: 19rem;
+    }
+    .program-card-bar{
+        border: 1px solid rgba(0, 0, 0, 0.122);
+        width: 16rem;
+    }
+    .program-btn{
+        width: 15rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  {
+    .programs-card{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 0rem;
+    }
+    .program-card{
+        width: 24rem;
+    }
+    .program-card img{
+        width: 24rem;
+    }
+    .program-card-bar{
+        border: 1px solid rgba(0, 0, 0, 0.122);
+        width: 20rem;
+    }
+    .program-btn{
+        width: 15rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  {
+    .programs-card{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        padding-left: 0rem;
+    }
+    .program-card{
+        width: 20rem;
+    }
+    .program-card img{
+        width: 20rem;
+    }
+    .program-card-bar{
+        border: 1px solid rgba(0, 0, 0, 0.122);
+        width: 17rem;
+    }
+    .program-btn{
+        width: 15rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

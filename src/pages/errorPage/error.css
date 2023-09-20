@@ -1,0 +1,13 @@
+.error{
+    padding: 4rem;
+    height: 100vh;
+    background-color: rgb(189, 189, 189);
+    text-align: center;
+}
+.error-link{
+    color: blue;
+    transition: var(--transition);
+}
+.error-link:hover{
+    text-decoration: underline;
+}

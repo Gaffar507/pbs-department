@@ -1,0 +1,116 @@
+.honours-container{
+    height: auto;
+}
+.honours{
+    display: flex;
+}
+.left-honours{
+    flex-basis: 70%;
+    padding: 3rem;
+}
+.left-honours h1{
+    font-weight: 100;
+    padding-bottom: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box{
+    display: flex;
+    padding: 2rem;
+    column-gap: 2rem;
+    box-shadow: 1px 1px 22px rgba(0, 0, 0, 0.139),
+    -1px 0 22px rgba(0, 0, 0, 0.14);
+}
+.box-bar{
+    border-left: 1px solid rgb(255, 162, 0);
+}
+
+/* overview design starts */
+.overview-container{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 3rem;
+}
+.overview{
+    border: 1px solid black;
+    padding: 1rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.overview:hover{
+    background-color: rgba(177, 177, 177, 0.32);
+}
+.overview-true{
+    background-color: rgb(0, 0, 59);
+    color: white;
+    transition: var(--transition);
+}
+.overview-true:hover{
+    background-color: rgb(0, 0, 59);
+}
+/* overview design starts */
+
+/* overview description design starts */
+.program-des{
+    padding: 3rem 0;
+    line-height: 1.8rem;
+}
+.program-des h2{
+    margin-bottom: 1rem;
+}
+.floats{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+/* overview description design ends */
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {
+    .honours{
+        display: flex;
+    }
+    .left-honours{
+        flex-basis: 70%;
+        padding: 2rem;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  { 
+    .honours{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-honours{
+        flex-basis: 70%;
+        padding: 1.2rem;
+    }
+    .left-honours h1{
+        font-size: 1.6rem;
+    }
+    .box{
+        display: flex;
+        padding: 1rem;
+        column-gap: 2rem;
+    }
+    
+    /* overview design starts */
+    .overview-container{
+        display: flex;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 3rem;
+    }
+    .overview{
+        border: 1px solid black;
+        padding: .3rem;
+        transition: var(--transition);
+        cursor: pointer;
+    }
+    /* overview design starts */
+}
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }

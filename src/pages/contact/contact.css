@@ -1,0 +1,36 @@
+.contact{
+    padding: 4rem;
+}
+.contact section{
+    margin: 2rem 0;
+    line-height: 1.5rem;
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {
+    .contact{
+        padding: 2rem;
+    }
+    .contact section{
+        margin: 1.8rem 0;
+        line-height: 1.5rem;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  {
+    .contact{
+        padding: 1.5rem;
+    }
+    .contact section{
+        margin: 1.5rem 0;
+        line-height: 1.5rem;
+    }
+    
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  { }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }
