@@ -1,0 +1,264 @@
+.slider-container{
+    width: 100%;
+    height: 91vh;
+    overflow: hidden;
+    margin-top: -1rem;
+}
+.swiper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.slide{
+    height: 100%;
+    width: 100%;
+}
+.banner-back{
+    height: 91vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.526);
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.slide-img{
+    height: 600px;
+    width: 120%;
+    object-fit: cover;
+    animation: zoom-out 4s linear infinite;
+}
+@keyframes zoom-out {
+    100%{
+        width: 100%;
+    }
+}
+.title-box{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: text-up 12s linear infinite;
+    transform: translateY(150px);
+}
+.title-box h1{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.slide-bar{
+    width: 13rem;
+    background-color: rgba(255, 128, 0, 0.839);
+    border-radius: 2rem;
+    padding: .05rem;
+    margin: 5rem 0;
+}
+.title-link{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    margin: 0 auto;
+    transition: var(--transition);
+}
+.title-link:hover{
+    background-color: rgb(255, 136, 0);
+}
+
+@keyframes text-up {
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.text-1{
+    animation-delay: 0s;
+}
+.text-2{
+    animation-delay: 3s;
+}
+.text-3{
+    animation-delay: 6s;
+}
+.text-4{
+    animation-delay: 9s;
+}
+
+/* -----MEDIA QUERIES----- */
+/*max-width style*/
+
+/* hi-res laptops and desktops */
+@media screen and (max-width:1281px) { }
+
+ /* big landscape tablets, laptops, and desktops */
+@media screen and (max-width:1025px) {
+ }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (max-width:961px)  {
+    .slider-container{
+        width: 100%;
+        height: 91vh;
+        overflow: hidden;
+    }
+ }
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media screen and (max-width:641px)  {
+    .slider-container{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .swiper{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slide{
+        height: 100%;
+        width: 100%;
+    }
+    .banner-back{
+        height: 90vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.526);
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .slide-img{
+        height: 600px;
+        width: 120%;
+        object-fit: cover;
+        animation: zoom-out 4s linear infinite;
+    }
+    @keyframes zoom-out {
+        100%{
+            width: 100%;
+        }
+    }
+    .title-box{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 7rem;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: text-up 12s linear infinite;
+        transform: translateY(150px);
+    }
+    .title-box h1{
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .slide-bar{
+        width: 9rem;
+        background-color: rgba(255, 128, 0, 0.839);
+        border-radius: 2rem;
+        padding: .05rem;
+        margin: 3rem 0;
+    }
+    .title-link{
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        padding: .4rem .8rem;
+        border-radius: .2rem;
+        margin: 0 auto;
+    }
+ }
+
+ /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media screen and (max-width:481px)  {
+    .slider-container{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .swiper{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slide{
+        height: 100%;
+        width: 100%;
+    }
+    .banner-back{
+        height: 90vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.526);
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .slide-img{
+        height: 600px;
+        width: 120%;
+        object-fit: cover;
+        animation: zoom-out 4s linear infinite;
+    }
+    @keyframes zoom-out {
+        100%{
+            width: 100%;
+        }
+    }
+    .title-box{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 4rem;
+        left: 0rem;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: text-up 12s linear infinite;
+        transform: translateY(150px);
+    }
+    .title-box h1{
+        font-weight: bold;
+        font-size: 1rem;
+        color: white;
+    }
+    .slide-bar{
+        width: 8rem;
+        background-color: rgba(255, 128, 0, 0.839);
+        border-radius: 2rem;
+        padding: .05rem;
+        margin: 2.5rem 0;
+    }
+    .title-link{
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        padding: .2rem .4rem;
+        border-radius: .2rem;
+        margin: 0 auto;
+    }
+ }
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media screen and (max-width:320px)  { }
