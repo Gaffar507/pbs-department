@@ -29,7 +29,7 @@
     height: 600px;
     width: 120%;
     object-fit: cover;
-    animation: zoom-out 4s linear infinite;
+    animation: zoom-out 3s linear infinite;
 }
 @keyframes zoom-out {
     100%{
@@ -83,7 +83,7 @@
     }
 }
 .text-1{
-    animation-delay: 0s;
+    animation-delay: 2s;
 }
 .text-2{
     animation-delay: 3s;

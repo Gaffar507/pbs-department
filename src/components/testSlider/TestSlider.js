@@ -23,6 +23,7 @@ const TestSlider = () => {
         delay: 4000,
         disableOnInteraction: false,
       }}
+      grabCursor='true'
       navigation
       pagination={{ clickable: true }}
       onSwiper={(swiper) => console.log(swiper)}
